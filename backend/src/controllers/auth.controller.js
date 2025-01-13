@@ -57,13 +57,13 @@ export const login = async (req, res) => {
       res.status(400).json({ message: "Invalid credentials" });
     }
 
-    const isPasswordCorrect = bcrypt.compare(password, user.password);
+    const isPasswordCorrect = await bcrypt.compare(password, user.password);
 
     if (!isPasswordCorrect) {
       res.status(400).json({ message: "Invalid credentials" });
     }
 
-    genetateToken(user._id, res);
+    generateToken(user._id, res);
     res.status(200).json({
       _id: user._id,
       email: user.email,
@@ -85,3 +85,5 @@ export const logout = (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };
+
+export const updateProfile = async (req, res) => {};
