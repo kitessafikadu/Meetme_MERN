@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import {
   MessageSquare,
   User,
@@ -7,7 +9,6 @@ import {
   EyeOff,
   Eye,
   Loader2,
-  Link,
 } from "lucide-react";
 
 import { useAuthStore } from "../store/useAuthStore";
