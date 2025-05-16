@@ -33,8 +33,8 @@ MeetMe is a modern real-time chat application that enables users to send message
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/kitessafikadu/meetme.git
-cd meetme
+git clone https://github.com/kitessafikadu/Meetme_MERN.git
+cd Meetme_MERN
 ````
 
 ### 2. Environment Variables
@@ -52,14 +52,14 @@ JWT_SECRET=your_jwt_secret
 #### Backend
 
 ```bash
-cd server
+cd backend
 npm install
 ```
 
 #### Frontend
 
 ```bash
-cd ../client
+cd frontend
 npm install
 ```
 
@@ -75,14 +75,9 @@ npm run dev
 #### Start Frontend
 
 ```bash
-cd client
+cd frontend
 npm start
 ```
-
-> App will run at `http://localhost:3000` and backend at `http://localhost:5000`
-
-## 📸 Screenshots
-
 *Coming soon...*
 
 ## 📌 Todo
